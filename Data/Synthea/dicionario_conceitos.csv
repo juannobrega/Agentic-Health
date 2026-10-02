@@ -1,0 +1,536 @@
+codigo_origem,vocabulario,nome_portugues,dominios,ocorrencias,observacao
+72514-3,LOINC,Escala de dor (0-10),exame,10836,
+72166-2,LOINC,Status de tabagismo,exame,10106,
+29463-7,LOINC,Peso corporal,exame,10106,
+8302-2,LOINC,Altura,exame,10106,
+8480-6,LOINC,Pressão arterial sistólica,exame,9980,
+8462-4,LOINC,Pressão arterial diastólica,exame,9980,
+39156-5,LOINC,Índice de massa corporal (IMC),exame,9009,
+140,RxNorm,Acetaminofeno (paracetamol),medicamento,7922,
+274804006,SNOMED CT,Avaliação de nutrição,exame; procedimento,5694,
+225158009,SNOMED CT,Educação em cuidados com a pele,exame; procedimento,5694,
+428191000124101,SNOMED CT,Status de tabagismo documentado,exame,4583,
+20565-8,LOINC,CO2 (bicarbonato),exame,4559,
+2069-3,LOINC,Cloreto,exame,4559,
+6298-4,LOINC,Potássio,exame,4559,
+2947-0,LOINC,Sódio,exame,4559,
+49765-1,LOINC,Cálcio,exame,4559,
+38483-4,LOINC,Creatinina,exame,4559,
+6299-2,LOINC,Ureia,exame,4559,
+2339-0,LOINC,Glicose,exame,4559,
+33914-3,LOINC,Taxa de filtração glomerular estimada (TFGe),exame,4253,
+2085-9,LOINC,Colesterol HDL,exame,4168,
+18262-6,LOINC,Colesterol LDL,exame,4168,
+2571-8,LOINC,Triglicerídeos,exame,4168,
+2093-3,LOINC,Colesterol total,exame,4168,
+4548-4,LOINC,Hemoglobina glicada (HbA1c),exame,3499,
+444814009,SNOMED CT,Infecção viral das vias aéreas superiores,condição; medicamento; observação,3402,codigo de condicao usado em medicamento (bug ETL)
+76601001,SNOMED CT,Injeção intramuscular,exame; procedimento,3320,
+180256009,SNOMED CT,Apendicectomia de emergência,exame; procedimento,3162,
+718-7,LOINC,Hemoglobina,exame,2155,
+32623-1,LOINC,Volume plaquetário médio,exame,2140,
+32207-3,LOINC,Distribuição plaquetária,exame,2140,
+777-3,LOINC,Contagem de plaquetas,exame,2140,
+21000-5,LOINC,Amplitude de distribuição eritrocitária,exame,2140,
+786-4,LOINC,Hemoglobina corpuscular média (HCM),exame,2140,
+785-6,LOINC,Hemoglobina corpuscular média (conc.),exame,2140,
+787-2,LOINC,Volume corpuscular médio (VCM),exame,2140,
+4544-3,LOINC,Hematócrito,exame,2140,
+789-8,LOINC,Contagem de eritrócitos,exame,2140,
+6690-2,LOINC,Contagem de leucócitos,exame,2140,
+195662009,SNOMED CT,Faringite viral aguda,condição; medicamento; observação,1908,codigo de condicao usado em medicamento (bug ETL)
+316672,RxNorm,Hidroclorotiazida 25mg,medicamento,1869,
+180325003,SNOMED CT,Artroplastia de joelho,exame; procedimento,1784,
+10509002,SNOMED CT,Bronquite aguda,condição; medicamento; observação,1593,codigo de condicao usado em medicamento (bug ETL)
+5880005,SNOMED CT,Exame físico,exame; procedimento,1574,
+72892002,SNOMED CT,Otite média não supurativa,condição; medicamento; observação,1566,codigo de condicao usado em medicamento (bug ETL)
+162864005,SNOMED CT,IMC 30+ - obesidade,condição; medicamento; observação,1503,codigo de condicao usado em medicamento (bug ETL)
+14959-1,LOINC,Microalbuminúria,exame,1482,
+1920-8,LOINC,AST (TGO),exame,1123,
+1742-6,LOINC,ALT (TGP),exame,1123,
+6768-6,LOINC,Fosfatase alcalina,exame,1123,
+10834-0,LOINC,Globulina,exame,1123,
+1751-7,LOINC,Albumina,exame,1123,
+2885-2,LOINC,Proteína total,exame,1123,
+1975-2,LOINC,Bilirrubina total,exame,1120,
+73761001,SNOMED CT,Colonoscopia,exame; procedimento,1078,
+169230002,SNOMED CT,Ultrassom de gravidez,exame; procedimento,958,
+15777000,SNOMED CT,Pré-diabetes,condição; medicamento; observação,930,codigo de condicao usado em medicamento (bug ETL)
+171207006,SNOMED CT,Rastreamento de depressão,exame; procedimento,918,
+38341003,SNOMED CT,Hipertensão arterial,condição; medicamento; observação,897,codigo de condicao usado em medicamento (bug ETL)
+113,RxNorm,Amoxicilina,medicamento,821,
+8331-1,LOINC,Temperatura corporal (oral),exame,796,
+703423002,SNOMED CT,Terapia combinada para hipertensão,exame; procedimento,712,
+40055000,SNOMED CT,Sinusite crônica,condição; medicamento; observação,696,codigo de condicao usado em medicamento (bug ETL)
+443529005,SNOMED CT,Reparo de fratura,exame; procedimento,660,
+169690007,SNOMED CT,Parto normal,exame; procedimento,656,
+90226004,SNOMED CT,Avaliação de cuidados pré-natais,exame; procedimento,656,
+104091002,SNOMED CT,Hemograma completo,exame,643,
+271442007,SNOMED CT,Exame pré-natal,exame; procedimento,640,
+399014008,SNOMED CT,Cuidado pré-natal,exame; procedimento,630,
+313782,RxNorm,Acetaminofeno 325mg,medicamento,622,
+133,RxNorm,Aspirina,medicamento,612,
+19169002,SNOMED CT,Aborto espontâneo na gravidez,condição; medicamento; observação,573,codigo de condicao usado em medicamento (bug ETL)
+20,RxNorm,Acetaminofeno/oxicodona,medicamento,572,
+65363002,SNOMED CT,Otite média,condição; medicamento; observação,510,codigo de condicao usado em medicamento (bug ETL)
+43878008,SNOMED CT,Faringite estreptocócica,condição; medicamento; observação,504,codigo de condicao usado em medicamento (bug ETL)
+10,RxNorm,Ácido acetilsalicílico,medicamento,479,
+252160004,SNOMED CT,Ultrassonografia obstétrica,exame,479,
+18286008,SNOMED CT,Ressuscitação cardiopulmonar,exame; procedimento,424,
+114,RxNorm,Ampicilina,medicamento,402,
+408512008,SNOMED CT,Alcoolismo relatado pelo paciente,condição; medicamento; observação,399,codigo de condicao usado em medicamento (bug ETL)
+62,RxNorm,Albuterol,medicamento,378,
+44465007,SNOMED CT,Entorse de tornozelo,condição; medicamento; observação,363,codigo de condicao usado em medicamento (bug ETL)
+49,RxNorm,Alprazolam,medicamento,363,
+08,RxNorm,Acetaminofeno comp.,medicamento,361,
+65200003,SNOMED CT,Inserção de DIU,exame; procedimento,340,
+55822004,SNOMED CT,Hiperlipidemia,condição; medicamento; observação,330,codigo de condicao usado em medicamento (bug ETL)
+288086009,SNOMED CT,Sutura de ferimento,exame; procedimento,330,
+167271000,SNOMED CT,Exame de urina de rotina,exame,328,
+28163009,SNOMED CT,Teste de Apgar,exame,328,
+104326007,SNOMED CT,Cultura de urina,exame,328,
+104375008,SNOMED CT,Painel metabólico,exame,328,
+395123002,SNOMED CT,Rastreamento de estreptococo,exame,328,
+117010004,SNOMED CT,Análise de urina,exame,328,
+269828009,SNOMED CT,Teste de glicose,exame,328,
+165829005,SNOMED CT,Teste de tolerância à glicose,exame,328,
+310861008,SNOMED CT,Teste de clamídia,exame,328,
+31676001,SNOMED CT,Teste de rubéola,exame,328,
+47758006,SNOMED CT,Teste de hepatite B,exame,328,
+44608003,SNOMED CT,Tipagem sanguínea,exame,328,
+117015009,SNOMED CT,Painel de coagulação,exame,326,
+275833003,SNOMED CT,Teste de HIV,exame,320,
+52,RxNorm,Amitriptilina,medicamento,319,
+268556000,SNOMED CT,Rastreamento de sífilis,exame,315,
+228557008,SNOMED CT,Terapia cognitivo-comportamental,exame; procedimento,308,
+5767-9,SNOMED CT,Aparência da urina,exame,308,
+316049,RxNorm,"Hidroclorotiazida 12,5mg",medicamento,297,
+118001005,SNOMED CT,Painel lipídico,exame,290,
+127783003,SNOMED CT,Teste de função renal,exame,284,
+19926-5,LOINC,Fluxo expiratório (FEV1),exame,284,
+1736854,RxNorm,Amoxicilina 500mg/clavulanato,medicamento,278,
+562251,RxNorm,Amoxicilina 250mg,medicamento,263,
+121,RxNorm,Atenolol,medicamento,263,
+269911007,SNOMED CT,Exame neurológico,exame; procedimento,260,
+68496003,SNOMED CT,Pólipo do cólon,condição; medicamento; observação,258,codigo de condicao usado em medicamento (bug ETL)
+66348005,SNOMED CT,Avaliação do crescimento fetal,exame,251,
+36971009,SNOMED CT,Sinusite,condição; medicamento; observação,249,codigo de condicao usado em medicamento (bug ETL)
+274474001,SNOMED CT,Exame de ouvido,exame; procedimento,244,
+51116004,SNOMED CT,Imobilização de fratura,exame; procedimento,244,
+15081005,SNOMED CT,Drenagem de abscesso,exame; procedimento,238,
+119,RxNorm,Atorvastatina,medicamento,238,
+23426006,SNOMED CT,Espirometria,exame,235,
+849574,RxNorm,Naproxeno sódico 220mg,medicamento,230,
+03,RxNorm,Aspirina 81mg,medicamento,230,
+83,RxNorm,Carbamazepina,medicamento,227,
+21,RxNorm,Ciprofloxacino,medicamento,226,
+53741008,SNOMED CT,Doença arterial coronariana,condição; medicamento; observação,219,codigo de condicao usado em medicamento (bug ETL)
+398171003,SNOMED CT,Avaliação de risco cardiovascular,exame; procedimento,208,
+44054006,SNOMED CT,Diabetes mellitus tipo 2,condição; medicamento; observação,207,codigo de condicao usado em medicamento (bug ETL)
+169553002,SNOMED CT,Inserção de marca-passo,exame; procedimento,202,
+230690007,SNOMED CT,Acidente vascular cerebral,condição; medicamento; observação,201,codigo de condicao usado em medicamento (bug ETL)
+75498004,SNOMED CT,Infecção bacteriana aguda,condição; medicamento; observação,201,codigo de condicao usado em medicamento (bug ETL)
+302870006,SNOMED CT,Hipertrigliceridemia,condição; medicamento; observação,198,codigo de condicao usado em medicamento (bug ETL)
+410006001,SNOMED CT,Planejamento de cuidados de saúde,exame; procedimento,198,
+62106007,SNOMED CT,Concussão com perda de consciência,condição; medicamento; observação,195,codigo de condicao usado em medicamento (bug ETL)
+65546002,SNOMED CT,Extração dentária,exame; procedimento,194,
+757594,RxNorm,"Levonorgestrel 1,5mg",medicamento,194,
+237602007,SNOMED CT,Síndrome metabólica,condição; medicamento; observação,192,codigo de condicao usado em medicamento (bug ETL)
+82423001,SNOMED CT,Dor crônica,condição; medicamento; observação,186,codigo de condicao usado em medicamento (bug ETL)
+43,RxNorm,Clonazepam,medicamento,179,
+68254000,SNOMED CT,Remoção de DIU,exame; procedimento,176,
+428251008,SNOMED CT,Histórico de apendicectomia,condição; medicamento; observação,174,codigo de condicao usado em medicamento (bug ETL)
+74400008,SNOMED CT,Apendicite,condição; medicamento; observação,174,codigo de condicao usado em medicamento (bug ETL)
+80394007,SNOMED CT,Hiperglicemia,condição; medicamento; observação,171,codigo de condicao usado em medicamento (bug ETL)
+312681000,SNOMED CT,Tomografia de tórax,exame; procedimento,170,
+196416002,SNOMED CT,Esofagite por refluxo,condição; medicamento; observação,168,codigo de condicao usado em medicamento (bug ETL)
+310965,RxNorm,Ibuprofeno 200mg,medicamento,165,
+714812005,SNOMED CT,Contracepção de emergência,exame; procedimento,164,
+10383002,SNOMED CT,Transferência para unidade de saúde,exame; procedimento,164,
+124171000119105,SNOMED CT,Nefropatia diabética crônica,condição; medicamento; observação,162,codigo de condicao usado em medicamento (bug ETL)
+274031008,SNOMED CT,Exame retal,exame; procedimento,162,
+18946005,SNOMED CT,Cirurgia de bypass coronariano,exame; procedimento,160,
+395142003,SNOMED CT,Rastreamento de alcoolismo,exame; procedimento,158,
+55680006,SNOMED CT,Overdose de droga,condição; medicamento; observação,156,codigo de condicao usado em medicamento (bug ETL)
+64859006,SNOMED CT,Osteoporose,condição; medicamento; observação,156,codigo de condicao usado em medicamento (bug ETL)
+583214,RxNorm,Nitrofurantoína 100mg,medicamento,156,
+5799-2,LOINC,Leucócitos na urina,exame,154,
+5794-3,LOINC,Hemoglobina na urina,exame,154,
+5802-4,LOINC,Nitrito na urina,exame,154,
+20454-5,LOINC,Proteína na urina,exame,154,
+5804-0,LOINC,Proteína na urina (tira),exame,154,
+5803-2,LOINC,pH da urina,exame,154,
+5811-5,LOINC,Densidade da urina,exame,154,
+2514-8,LOINC,Cetonas na urina,exame,154,
+5797-6,LOINC,Glicose na urina,exame,154,
+5770-3,LOINC,Bilirrubina na urina,exame,154,
+20505-4,LOINC,Urobilinogênio na urina,exame,154,
+25428-4,LOINC,Glicose na urina (tira),exame,154,
+5792-7,LOINC,Glicose na urina (quant.),exame,154,
+5778-6,LOINC,Cor da urina,exame,154,
+32167-9,LOINC,Aspecto da urina,exame,154,
+70704007,SNOMED CT,Entorse de punho,condição; medicamento; observação,153,codigo de condicao usado em medicamento (bug ETL)
+39848009,SNOMED CT,Lesão em chicote do pescoço,condição; medicamento; observação,147,codigo de condicao usado em medicamento (bug ETL)
+85548006,SNOMED CT,Episiotomia,exame; procedimento,146,
+748962,RxNorm,Etinilestradiol/norgestimato,medicamento,146,
+239873007,SNOMED CT,Osteoartrite do joelho,condição; medicamento; observação,138,codigo de condicao usado em medicamento (bug ETL)
+46706006,SNOMED CT,Preparo de ferida,exame; procedimento,136,
+65966004,SNOMED CT,Fratura do fêmur,condição; medicamento; observação,135,codigo de condicao usado em medicamento (bug ETL)
+831533,RxNorm,Meloxicam 15mg,medicamento,132,
+265764009,SNOMED CT,Diálise renal,exame; procedimento,130,
+703151001,SNOMED CT,Histórico de artroplastia de joelho,condição; medicamento; observação,129,codigo de condicao usado em medicamento (bug ETL)
+128613002,SNOMED CT,Transtorno convulsivo,condição; medicamento; observação,129,codigo de condicao usado em medicamento (bug ETL)
+1049221,RxNorm,Acetaminofeno 325mg comp.,medicamento,126,
+49436004,SNOMED CT,Fibrilação atrial,condição; medicamento; observação,123,codigo de condicao usado em medicamento (bug ETL)
+1734340,RxNorm,Amoxicilina/clavulanato 875mg,medicamento,122,
+72106-8,LOINC,Escore de risco de quedas,exame,121,
+198405,RxNorm,Ibuprofeno 600mg,medicamento,120,
+69453-9,LOINC,Causa do óbito,exame,120,
+271737000,SNOMED CT,Anemia,condição; medicamento; observação,117,codigo de condicao usado em medicamento (bug ETL)
+1860154,RxNorm,Insulina glargina,medicamento,117,
+115,RxNorm,Amlodipino,medicamento,117,
+284551006,SNOMED CT,Laceração de pé,condição; medicamento; observação,114,codigo de condicao usado em medicamento (bug ETL)
+433112001,SNOMED CT,Terapia por pressão positiva,exame; procedimento,114,
+301807007,SNOMED CT,Exame de pele,exame; procedimento,114,
+1043400,RxNorm,Acetaminofeno 500mg,medicamento,114,
+282464,RxNorm,Metformina 500mg,medicamento,112,
+284549007,SNOMED CT,Laceração de mão,condição; medicamento; observação,111,codigo de condicao usado em medicamento (bug ETL)
+232353008,SNOMED CT,Perfuração do tímpano,condição; medicamento; observação,111,codigo de condicao usado em medicamento (bug ETL)
+263102004,SNOMED CT,Ruptura de menisco,condição; medicamento; observação,108,codigo de condicao usado em medicamento (bug ETL)
+156073000,SNOMED CT,Obesidade,condição; medicamento; observação,108,codigo de condicao usado em medicamento (bug ETL)
+309362,RxNorm,Clopidogrel 75mg,medicamento,107,
+399208008,SNOMED CT,Radiografia de tórax,exame; procedimento,106,
+31208007,SNOMED CT,Remoção de pólipo,exame; procedimento,106,
+389221,RxNorm,Etonogestrel implante,medicamento,106,
+399211009,SNOMED CT,Histórico de infarto do miocárdio,condição; medicamento; observação,105,codigo de condicao usado em medicamento (bug ETL)
+22298006,SNOMED CT,Infarto do miocárdio,condição; medicamento; observação,105,codigo de condicao usado em medicamento (bug ETL)
+16335031000119104,LOINC,Avaliação de cuidado domiciliar,exame,104,
+807283,RxNorm,Levonorgestrel DIU,medicamento,103,
+429007001,SNOMED CT,Histórico de infarto,condição; medicamento; observação,102,codigo de condicao usado em medicamento (bug ETL)
+410429000,SNOMED CT,Parada cardíaca,condição; medicamento; observação,102,codigo de condicao usado em medicamento (bug ETL)
+26929004,SNOMED CT,Doença de Alzheimer,condição; medicamento; observação,102,codigo de condicao usado em medicamento (bug ETL)
+283371005,SNOMED CT,Laceração de antebraço,condição; medicamento; observação,99,codigo de condicao usado em medicamento (bug ETL)
+2857-1,LOINC,PSA (antígeno prostático específico),exame,99,
+32465-7,LOINC,PSA livre,exame,99,
+1310197,RxNorm,Insulina lispro,medicamento,98,
+308182,RxNorm,Amoxicilina 500mg,medicamento,97,
+301011002,SNOMED CT,Infecção do trato urinário por E. coli,condição; medicamento; observação,96,codigo de condicao usado em medicamento (bug ETL)
+446096008,SNOMED CT,Esteatose hepática perivenular,condição; medicamento; observação,96,codigo de condicao usado em medicamento (bug ETL)
+127013003,SNOMED CT,Nefropatia diabética,condição; medicamento; observação,93,codigo de condicao usado em medicamento (bug ETL)
+755621000000101,SNOMED CT,Avaliação de saúde mental,exame; procedimento,92,
+370247008,SNOMED CT,Lesão facial,condição; medicamento; observação,90,codigo de condicao usado em medicamento (bug ETL)
+1225002,SNOMED CT,Angioplastia coronária,exame; procedimento,90,
+33,RxNorm,Codeína,medicamento,90,
+1870230,RxNorm,Ácido fólico 1mg,medicamento,88,
+198992004,SNOMED CT,Pré-eclâmpsia leve,condição; medicamento; observação,87,codigo de condicao usado em medicamento (bug ETL)
+431855005,SNOMED CT,Doença renal crônica estágio 1,condição; medicamento; observação,87,codigo de condicao usado em medicamento (bug ETL)
+834102,RxNorm,Naproxeno 500mg,medicamento,85,
+38265-5,LOINC,Contagem de linfócitos CD3,exame,85,
+419474003,SNOMED CT,Alergia a amoxicilina,observação,85,
+283385000,SNOMED CT,Laceração de ombro,condição; medicamento; observação,84,codigo de condicao usado em medicamento (bug ETL)
+58150001,SNOMED CT,Fratura de clavícula,condição; medicamento; observação,84,codigo de condicao usado em medicamento (bug ETL)
+232347008,SNOMED CT,Alergia a pólen,observação,84,
+386394001,SNOMED CT,Avaliação de dor,exame,82,
+1000126,RxNorm,Ácido tranexâmico,medicamento,79,
+6158-0,LOINC,Pólen de gramínea IgE,exame,79,
+6844-5,LOINC,Pólen de árvore IgE,exame,79,
+6075-6,LOINC,Ácaro IgE,exame,79,
+6095-4,LOINC,Epitélio de gato IgE,exame,79,
+6833-8,LOINC,Epitélio de cão IgE,exame,79,
+6085-5,LOINC,Mofo IgE,exame,79,
+6189-5,LOINC,Amendoim IgE,exame,79,
+7258-7,LOINC,Trigo IgE,exame,79,
+6248-9,LOINC,Leite IgE,exame,79,
+6106-9,LOINC,Clara de ovo IgE,exame,79,
+6276-0,LOINC,Soja IgE,exame,79,
+6246-3,LOINC,Camarão IgE,exame,79,
+6082-2,LOINC,Castanha IgE,exame,79,
+6273-7,LOINC,Nozes IgE,exame,79,
+6206-7,LOINC,Látex IgE,exame,79,
+713197008,SNOMED CT,Fibrose cística recorrente,condição; medicamento; observação,78,codigo de condicao usado em medicamento (bug ETL)
+834061,RxNorm,"Meloxicam 7,5mg",medicamento,77,
+705129,RxNorm,Nitroglicerina sublingual,medicamento,77,
+16114001,SNOMED CT,Fratura de tornozelo,condição; medicamento; observação,75,codigo de condicao usado em medicamento (bug ETL)
+241929008,SNOMED CT,Reação alérgica a alimento,condição; medicamento; observação,75,codigo de condicao usado em medicamento (bug ETL)
+233678006,SNOMED CT,Asma na infância,condição; medicamento; observação,75,codigo de condicao usado em medicamento (bug ETL)
+11466000,SNOMED CT,Cesariana,exame; procedimento,74,
+62564004,SNOMED CT,Concussão sem perda de consciência,condição; medicamento; observação,72,codigo de condicao usado em medicamento (bug ETL)
+367498001,SNOMED CT,Gripe sazonal,condição; medicamento; observação,72,codigo de condicao usado em medicamento (bug ETL)
+60027007,SNOMED CT,Hemodiálise,exame; procedimento,72,
+311791003,SNOMED CT,Escala de ansiedade,exame,71,
+46240-8,LOINC,Histórico de internações,exame,71,
+63513-6,LOINC,Avaliação de violência doméstica,exame,71,
+71802-3,LOINC,Situação de moradia,exame,71,
+28245-9,LOINC,Avaliação de estresse,exame,71,
+55277-8,LOINC,Avaliação de risco de queda,exame,71,
+76690-7,LOINC,Orientação sexual,exame,71,
+419263009,SNOMED CT,Alergia a ácaros,observação,71,
+84757009,SNOMED CT,Epilepsia,condição; medicamento; observação,69,codigo de condicao usado em medicamento (bug ETL)
+232717009,SNOMED CT,Bypass coronariano com enxerto,exame; procedimento,68,
+415070008,SNOMED CT,Angioplastia percutânea,exame; procedimento,68,
+239872002,SNOMED CT,Osteoartrite do quadril,condição; medicamento; observação,66,codigo de condicao usado em medicamento (bug ETL)
+79586000,SNOMED CT,Gravidez tubária,condição; medicamento; observação,66,codigo de condicao usado em medicamento (bug ETL)
+74006-8,LOINC,Questionário PHQ-2 (depressão),exame,65,
+418689008,SNOMED CT,Alergia a grama,observação,65,
+1015401000000102,SNOMED CT,Questionário de humor,exame,64,
+57905-2,LOINC,Escala de depressão PHQ-9,exame,64,
+33756-8,LOINC,Avaliação funcional,exame,64,
+368581000119106,SNOMED CT,Neuropatia por diabetes tipo 2,condição; medicamento; observação,63,codigo de condicao usado em medicamento (bug ETL)
+398254007,SNOMED CT,Pré-eclâmpsia,condição; medicamento; observação,63,codigo de condicao usado em medicamento (bug ETL)
+232350006,SNOMED CT,Alergia a mofo,observação,62,
+749762,RxNorm,Etinilestradiol/noretindrona,medicamento,61,
+126906006,SNOMED CT,Neoplasia de bexiga,condição; medicamento; observação,60,codigo de condicao usado em medicamento (bug ETL)
+24079001,SNOMED CT,Dermatite atópica,condição; medicamento; observação,60,codigo de condicao usado em medicamento (bug ETL)
+860975,RxNorm,Metformina 850mg,medicamento,59,
+312961,RxNorm,Sinvastatina 20mg,medicamento,59,
+92691004,SNOMED CT,Carcinoma in situ de próstata,condição; medicamento; observação,57,codigo de condicao usado em medicamento (bug ETL)
+197361,RxNorm,Amlodipino 5mg,medicamento,57,
+168594001,SNOMED CT,Radiografia de membro,exame; procedimento,56,
+1804799,RxNorm,Hidrocodona/acetaminofeno,medicamento,55,
+745679,RxNorm,Aripiprazol,medicamento,55,
+895994,RxNorm,Varfarina 5mg,medicamento,55,
+169673001,SNOMED CT,Ultrassonografia de rotina na gravidez,exame,55,
+201834006,SNOMED CT,Dermatite perioral,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+35999006,SNOMED CT,Cegueira,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+403190006,SNOMED CT,Queimadura solar de primeiro grau,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+422034002,SNOMED CT,Retinopatia diabética proliferativa,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+47693006,SNOMED CT,Ruptura de apêndice,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+185086009,SNOMED CT,DPOC exacerbada,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+307731004,SNOMED CT,Fibrilação atrial de início recente,condição; medicamento; observação,54,codigo de condicao usado em medicamento (bug ETL)
+384700001,SNOMED CT,Imunoterapia,exame; procedimento,52,
+38822007,SNOMED CT,Cistite,condição; medicamento; observação,51,codigo de condicao usado em medicamento (bug ETL)
+748856,RxNorm,Contraceptivo oral combinado,medicamento,51,
+19490002,SNOMED CT,Litotripsia,exame; procedimento,50,
+313191000,SNOMED CT,Angiografia coronária,exame; procedimento,50,
+311989,RxNorm,Sinvastatina 10mg,medicamento,50,
+1094107,RxNorm,Varfarina sódica,medicamento,50,
+33737001,SNOMED CT,Fratura de rádio,condição; medicamento; observação,48,codigo de condicao usado em medicamento (bug ETL)
+87433001,SNOMED CT,Enfisema pulmonar,condição; medicamento; observação,48,codigo de condicao usado em medicamento (bug ETL)
+192127007,SNOMED CT,Transtorno do espectro autista infantil,condição; medicamento; observação,48,codigo de condicao usado em medicamento (bug ETL)
+751905,RxNorm,Medroxiprogesterona injetável,medicamento,47,
+300913006,SNOMED CT,Alergia a frutos do mar,observação,47,
+74016001,SNOMED CT,Radiografia de abdômen,exame; procedimento,44,
+287664005,SNOMED CT,Teste de função pulmonar,exame; procedimento,44,
+403191005,SNOMED CT,Queimadura solar de segundo grau,condição; medicamento; observação,42,codigo de condicao usado em medicamento (bug ETL)
+1551000119108,SNOMED CT,Retinopatia diabética não proliferativa,condição; medicamento; observação,42,codigo de condicao usado em medicamento (bug ETL)
+237001001,SNOMED CT,Indução do parto,exame; procedimento,42,
+861467,RxNorm,Metformina 1000mg,medicamento,42,
+197604,RxNorm,Lisinopril 10mg,medicamento,41,
+855332,RxNorm,"Varfarina 2,5mg",medicamento,41,
+1367439,RxNorm,Insulina detemir,medicamento,41,
+34552-0,LOINC,Resumo de alta hospitalar,exame,41,
+897718,RxNorm,Verapamil,medicamento,39,
+1000156,RxNorm,Ácido ursodesoxicólico,medicamento,39,
+904419,RxNorm,Zolpidem,medicamento,39,
+978950,RxNorm,Trazodona,medicamento,39,
+699253003,SNOMED CT,Cirurgia de catarata,exame; procedimento,38,
+305428000,SNOMED CT,Admissão hospitalar,exame,38,
+443165006,SNOMED CT,Faringite aguda,condição; medicamento; observação,36,codigo de condicao usado em medicamento (bug ETL)
+444448004,SNOMED CT,Neuropatia diabética,condição; medicamento; observação,36,codigo de condicao usado em medicamento (bug ETL)
+43075005,SNOMED CT,Remoção de corpo estranho,exame; procedimento,36,
+54550000,SNOMED CT,Biópsia de fígado,exame; procedimento,36,
+1534809,RxNorm,Levotiroxina,medicamento,36,
+748879,RxNorm,Noretindrona,medicamento,36,
+997488,RxNorm,Tansulosina,medicamento,35,
+236974004,SNOMED CT,Amniocentese,exame; procedimento,34,
+857005,RxNorm,Metformina/glipizida,medicamento,34,
+233604007,SNOMED CT,Pneumonia,condição; medicamento; observação,33,codigo de condicao usado em medicamento (bug ETL)
+91935009,SNOMED CT,Alergia a amendoim,observação,33,
+447365002,SNOMED CT,Tomografia computadorizada,exame; procedimento,32,
+424213003,SNOMED CT,Alergia a abelha,observação,32,
+449868002,SNOMED CT,Fumante atual de cigarro,condição; medicamento; observação,30,codigo de condicao usado em medicamento (bug ETL)
+363406005,SNOMED CT,Neoplasia maligna do cólon,condição; medicamento; observação,30,codigo de condicao usado em medicamento (bug ETL)
+359817006,SNOMED CT,Doença renal crônica estágio 2,condição; medicamento; observação,30,codigo de condicao usado em medicamento (bug ETL)
+896209,RxNorm,Varfarina 10mg,medicamento,30,
+309097,RxNorm,Cefalexina 500mg,medicamento,29,
+1049630,RxNorm,Oxicodona/acetaminofeno,medicamento,29,
+833036,RxNorm,Metoprolol succinato,medicamento,28,
+417532002,SNOMED CT,Alergia a aspirina,observação,28,
+162573006,SNOMED CT,Suspeita de abuso de álcool,condição; medicamento; observação,27,codigo de condicao usado em medicamento (bug ETL)
+90781000119102,SNOMED CT,Doença renal crônica por diabetes,condição; medicamento; observação,27,codigo de condicao usado em medicamento (bug ETL)
+308192,RxNorm,Amoxicilina 250mg,medicamento,27,
+665078,RxNorm,Oxicodona,medicamento,27,
+91934008,SNOMED CT,Alergia a castanhas,observação,26,
+312617,RxNorm,Sertralina 50mg,medicamento,25,
+106892,RxNorm,Insulina humana,medicamento,25,
+109838007,SNOMED CT,Carcinoma de cólon,condição; medicamento; observação,24,codigo de condicao usado em medicamento (bug ETL)
+88805009,SNOMED CT,Cardiomiopatia isquêmica crônica,condição; medicamento; observação,24,codigo de condicao usado em medicamento (bug ETL)
+431856006,SNOMED CT,Doença renal crônica estágio 4,condição; medicamento; observação,24,codigo de condicao usado em medicamento (bug ETL)
+162676008,SNOMED CT,Exame de abdômen,exame; procedimento,24,
+430193006,SNOMED CT,Reparo de hérnia,exame; procedimento,24,
+415300000,SNOMED CT,Transfusão de sangue,exame; procedimento,24,
+65575008,SNOMED CT,Craniotomia,exame; procedimento,24,
+80146002,SNOMED CT,Apendicectomia,exame; procedimento,24,
+425525006,SNOMED CT,Alergia a trigo,observação,24,
+259255,RxNorm,Prednisona 20mg,medicamento,23,
+477045,RxNorm,Prednisona 10mg,medicamento,23,
+106258,RxNorm,Insulina NPH,medicamento,23,
+171231001,SNOMED CT,Rastreamento de câncer cervical,exame; procedimento,22,
+749785,RxNorm,Noretindrona/etinilestradiol,medicamento,22,
+316052,RxNorm,Hidroclorotiazida 50mg,medicamento,22,
+300916003,SNOMED CT,Alergia a látex,observação,22,
+40275004,SNOMED CT,Dermatite de contato,condição; medicamento; observação,21,codigo de condicao usado em medicamento (bug ETL)
+268425006,SNOMED CT,Mamografia,exame; procedimento,20,
+897122,RxNorm,Verapamil SR,medicamento,20,
+1860480,RxNorm,Insulina glargina 100U,medicamento,19,
+752899,RxNorm,Medroxiprogesterona 150mg,medicamento,19,
+5602001,SNOMED CT,Dor por opioides,condição; medicamento; observação,18,codigo de condicao usado em medicamento (bug ETL)
+424132000,SNOMED CT,Carcinoma de células escamosas da pele,condição; medicamento; observação,18,codigo de condicao usado em medicamento (bug ETL)
+254637007,SNOMED CT,Câncer de pulmão não pequenas células,condição; medicamento; observação,18,codigo de condicao usado em medicamento (bug ETL)
+418891003,SNOMED CT,Ablação cardíaca,exame; procedimento,18,
+698354004,SNOMED CT,Monitoramento cardíaco contínuo,exame; procedimento,18,
+310436,RxNorm,Fluoxetina 20mg,medicamento,18,
+1736776,RxNorm,Amoxicilina/clavulanato 500mg,medicamento,18,
+1803932,RxNorm,Hidrocodona 5mg/APAP,medicamento,18,
+91930004,SNOMED CT,Alergia a ovo,observação,17,
+420174000,SNOMED CT,Alergia a trigo (confirmada),observação,17,
+112790001,SNOMED CT,Traqueostomia,exame; procedimento,16,
+90470006,SNOMED CT,Prostatectomia,exame; procedimento,16,
+236931002,SNOMED CT,Reparo de bexiga,exame; procedimento,16,
+243670,RxNorm,Aspirina 325mg,medicamento,16,
+1660014,RxNorm,Enoxaparina,medicamento,16,
+1190795,RxNorm,Celecoxibe,medicamento,16,
+40930008,SNOMED CT,Hipotireoidismo,condição; medicamento; observação,15,codigo de condicao usado em medicamento (bug ETL)
+236077008,SNOMED CT,Prostatite crônica,condição; medicamento; observação,15,codigo de condicao usado em medicamento (bug ETL)
+6072007,SNOMED CT,Prolapso de válvula mitral,condição; medicamento; observação,15,codigo de condicao usado em medicamento (bug ETL)
+197927001,SNOMED CT,Uretrite recorrente,condição; medicamento; observação,15,codigo de condicao usado em medicamento (bug ETL)
+444470001,SNOMED CT,Lesão do nervo ulnar,condição; medicamento; observação,15,codigo de condicao usado em medicamento (bug ETL)
+195967001,SNOMED CT,Asma,condição; medicamento; observação,15,codigo de condicao usado em medicamento (bug ETL)
+308971,RxNorm,Clonidina,medicamento,15,
+834357,RxNorm,Metoprolol tartarato,medicamento,15,
+65588006,SNOMED CT,Teste de função hepática,exame,15,
+20570-8,LOINC,Hematócrito (calculado),exame,15,
+22523008,SNOMED CT,Ressecção intestinal,exame; procedimento,14,
+563026,RxNorm,Nitrofurantoína monoidratada,medicamento,14,
+1605257,RxNorm,Rivaroxabana,medicamento,13,
+275272006,SNOMED CT,Projeção de hemorragia,condição; medicamento; observação,12,codigo de condicao usado em medicamento (bug ETL)
+230265002,SNOMED CT,Enxaqueca sem aura,condição; medicamento; observação,12,codigo de condicao usado em medicamento (bug ETL)
+262574004,SNOMED CT,Ferimento por arma branca,condição; medicamento; observação,12,codigo de condicao usado em medicamento (bug ETL)
+93761005,SNOMED CT,Metástase cerebral,condição; medicamento; observação,12,codigo de condicao usado em medicamento (bug ETL)
+90560007,SNOMED CT,Gota,condição; medicamento; observação,12,codigo de condicao usado em medicamento (bug ETL)
+7200002,SNOMED CT,Alcoolismo,condição; medicamento; observação,12,codigo de condicao usado em medicamento (bug ETL)
+76164006,SNOMED CT,Biópsia de medula óssea,exame; procedimento,12,
+445912000,SNOMED CT,Radioterapia,exame; procedimento,12,
+197378,RxNorm,Amlodipino 10mg,medicamento,12,
+1153378,RxNorm,Contraceptivo injetável,medicamento,12,
+46288-7,LOINC,Avaliação de dor crônica,exame,12,
+1359133,RxNorm,Apixabana,medicamento,11,
+198031,RxNorm,Lovastatina,medicamento,10,
+370143000,SNOMED CT,Transtorno depressivo maior,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+67811000119102,SNOMED CT,Câncer de pulmão de pequenas células primário,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+254632001,SNOMED CT,Câncer de pulmão de pequenas células,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+15724005,SNOMED CT,Fratura de vértebra,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+97331000119101,SNOMED CT,Obesidade mórbida,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+235919008,SNOMED CT,Doença hepática alcoólica,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+65275009,SNOMED CT,Colecistite aguda,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+239720000,SNOMED CT,Tendinite do manguito rotador,condição; medicamento; observação,9,codigo de condicao usado em medicamento (bug ETL)
+311995,RxNorm,Sinvastatina 40mg,medicamento,9,
+865098,RxNorm,Metoprolol 50mg,medicamento,9,
+996740,RxNorm,"Tansulosina 0,4mg",medicamento,8,
+866414,RxNorm,Metformina ER,medicamento,8,
+315971,RxNorm,Ranitidina,medicamento,8,
+1014676,RxNorm,Omeprazol 20mg,medicamento,8,
+141918,RxNorm,Alendronato,medicamento,8,
+2001499,RxNorm,Semaglutida,medicamento,7,
+403192003,SNOMED CT,Queimadura solar de terceiro grau,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+1501000119109,SNOMED CT,Polineuropatia por diabetes tipo 2,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+30832001,SNOMED CT,Ruptura de bainha tendínea,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+157141000119108,SNOMED CT,Proteinúria por diabetes tipo 2,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+433144002,SNOMED CT,Doença renal crônica estágio 3,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+48333001,SNOMED CT,Queimadura de primeiro grau,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+69896004,SNOMED CT,Artrite reumatoide,condição; medicamento; observação,6,codigo de condicao usado em medicamento (bug ETL)
+432231006,SNOMED CT,Ventilação mecânica,exame; procedimento,6,
+29303009,SNOMED CT,Eletrocardiograma,exame; procedimento,6,
+426701000119108,SNOMED CT,Bypass gástrico,exame; procedimento,6,
+52765003,SNOMED CT,Intubação endotraqueal,exame; procedimento,6,
+429609002,SNOMED CT,Tomografia de crânio,exame; procedimento,6,
+387685009,SNOMED CT,Cateterismo cardíaco,exame; procedimento,6,
+167995008,SNOMED CT,Exame de urina,exame; procedimento,6,
+1740467,RxNorm,Amoxicilina suspensão,medicamento,6,
+1366343,RxNorm,Insulina aspart,medicamento,6,
+198014,RxNorm,Loratadina,medicamento,6,
+714035009,SNOMED CT,Alergia a soja,observação,6,
+966222,RxNorm,Pantoprazol,medicamento,5,
+835900,RxNorm,Montelucaste,medicamento,5,
+1599803,RxNorm,Dulaglutida,medicamento,5,
+197319,RxNorm,Alopurinol,medicamento,5,
+V89.03,SNOMED CT,Achado em gestação (CID V89.03),condição; medicamento; observação,4,codigo de condicao usado em medicamento (bug ETL)
+38102005,SNOMED CT,Colecistectomia,exame; procedimento,4,
+45595009,SNOMED CT,Esplenectomia,exame; procedimento,4,
+91602002,SNOMED CT,Nefrectomia,exame; procedimento,4,
+225337009,SNOMED CT,Avaliação de suicídio,exame; procedimento,4,
+715252007,SNOMED CT,Terapia com oxigênio,exame; procedimento,4,
+328670,RxNorm,Omeprazol,medicamento,4,
+1856546,RxNorm,Insulina humana regular,medicamento,4,
+998582,RxNorm,Albuterol HFA,medicamento,4,
+1091392,RxNorm,Fluticasona/salmeterol,medicamento,4,
+608139,RxNorm,Pioglitazona,medicamento,4,
+749882,RxNorm,Desogestrel/etinilestradiol,medicamento,4,
+42637-9,LOINC,Teste de gravidez,exame,4,
+110030002,SNOMED CT,Transtorno por concussão,condição; medicamento; observação,3,codigo de condicao usado em medicamento (bug ETL)
+45816000,SNOMED CT,Pielonefrite,condição; medicamento; observação,3,codigo de condicao usado em medicamento (bug ETL)
+225444004,SNOMED CT,Em risco de automutilação,condição; medicamento; observação,3,codigo de condicao usado em medicamento (bug ETL)
+60951000119105,SNOMED CT,Edema macular diabético,condição; medicamento; observação,3,codigo de condicao usado em medicamento (bug ETL)
+47505003,SNOMED CT,Transtorno de estresse pós-traumático,condição; medicamento; observação,3,codigo de condicao usado em medicamento (bug ETL)
+314994000,SNOMED CT,Metástase do cólon,condição; medicamento; observação,3,codigo de condicao usado em medicamento (bug ETL)
+406022,RxNorm,Budesonida,medicamento,3,
+310325,RxNorm,Furosemida 40mg,medicamento,3,
+789980,RxNorm,Rosuvastatina,medicamento,3,
+997223,RxNorm,"Tamsulosina 0,4mg",medicamento,3,
+311372,RxNorm,Ácido fólico,medicamento,3,
+1234995,RxNorm,Ticagrelor,medicamento,3,
+1808217,RxNorm,Hidroxizina,medicamento,3,
+311700,RxNorm,Gabapentina,medicamento,3,
+1659149,RxNorm,Heparina,medicamento,3,
+1732136,RxNorm,Ampicilina/sulbactam,medicamento,3,
+313002,RxNorm,Sotalol,medicamento,3,
+314659,RxNorm,Escitalopram,medicamento,3,
+3016-3,LOINC,TSH (tireoestimulante),exame,3,
+3024-7,LOINC,T4 livre,exame,3,
+80271-0,LOINC,Vitamina D,exame,3,
+33037-3,LOINC,Ânion gap,exame,3,
+2028-9,LOINC,Bicarbonato sérico,exame,3,
+2075-0,LOINC,Cloreto sérico,exame,3,
+2823-3,LOINC,Potássio sérico,exame,3,
+2951-2,LOINC,Sódio sérico,exame,3,
+17861-6,LOINC,Cálcio sérico,exame,3,
+2160-0,LOINC,Creatinina sérica,exame,3,
+3094-0,LOINC,Ureia sérica,exame,3,
+2345-7,LOINC,Glicose sérica,exame,3,
+42719-5,LOINC,Magnésio,exame,3,
+26515-7,LOINC,Plaquetas (automatizado),exame,3,
+30385-9,LOINC,RDW (automatizado),exame,3,
+30428-7,LOINC,VCM (automatizado),exame,3,
+26453-1,LOINC,Eritrócitos (automatizado),exame,3,
+26464-8,LOINC,Leucócitos (automatizado),exame,3,
+66534-9,LOINC,Neutrófilos (%),exame,3,
+66524-0,LOINC,Linfócitos (%),exame,3,
+66529-9,LOINC,Monócitos (%),exame,3,
+66519-0,LOINC,Eosinófilos (%),exame,3,
+177157003,SNOMED CT,Laqueadura tubária,exame; procedimento,2,
+173160006,SNOMED CT,Lobectomia pulmonar,exame; procedimento,2,
+52734007,SNOMED CT,Amputação,exame; procedimento,2,
+385892002,SNOMED CT,Cuidado paliativo,exame; procedimento,2,
+180207008,SNOMED CT,Histerectomia,exame; procedimento,2,
+309043,RxNorm,Cefazolina,medicamento,2,
+73032,RxNorm,Ácido ascórbico,medicamento,2,
+542347,RxNorm,Ropinirol,medicamento,2,
+1373463,RxNorm,Insulina degludeca,medicamento,2,
+997501,RxNorm,Tansulosina cápsula,medicamento,2,
+313185,RxNorm,Sulfametoxazol/trimetoprima,medicamento,2,
+305340004,SNOMED CT,Admissão em UTI,exame,2,
+183450002,SNOMED CT,Encaminhamento a especialista,exame,2,
+305433001,SNOMED CT,Admissão para cirurgia,exame,2,
+71972-4,LOINC,Teste de SARS-CoV-2,exame,2,
+71970-8,LOINC,Teste de influenza,exame,2,
+1652673,RxNorm,Insulina glulisina,medicamento,1,
+856980,RxNorm,Metformina/sitagliptina,medicamento,1,
+56795,RxNorm,Carvedilol,medicamento,1,
+200243,RxNorm,Latanoprosta,medicamento,1,
+105078,RxNorm,Diltiazem,medicamento,1,
+858069,RxNorm,Metoprolol/HCTZ,medicamento,1,
+309045,RxNorm,Cefepima,medicamento,1,
+1650142,RxNorm,Enoxaparina 40mg,medicamento,1,
+105586,RxNorm,Digoxina,medicamento,1,
+84215-3,LOINC,Avaliação de transporte,exame,1,
+75443-2,LOINC,Avaliação de insegurança alimentar,exame,1,
