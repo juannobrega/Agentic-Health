@@ -64,7 +64,22 @@ aéreas superiores"** em primeiro lugar — o que parece bug de software, não d
 Tratado no banco com chave substituta (ADR-002), mas afeta a API: o ID exposto
 ao cliente precisa ser o `pk`, não o ID original.
 
-### 1.4 Outras
+### 1.4 Prescrições clinicamente implausíveis
+
+O Synthea atribui medicamentos sem validar plausibilidade clínica contra a idade
+do paciente. Medido na base: **117 pacientes menores de 18 anos** têm prescrição
+de fármaco tipicamente adulto (metformina, tansulosina, atorvastatina, varfarina).
+
+Caso concreto — paciente #7, nascido em 2013, tem metformina registrada em 2015,
+aos **2 anos de idade**. Também aparecem tansulosina (uso em hiperplasia
+prostática) e atorvastatina no mesmo prontuário infantil.
+
+**Consequência:** o dataset não serve para validar regras de prescrição, alertas
+de contraindicação por idade ou qualquer lógica de segurança medicamentosa. Uma
+tela que sinalizasse "prescrição inadequada para a idade" acusaria centenas de
+falsos positivos que são artefato do gerador, não erro clínico a detectar.
+
+### 1.5 Outras
 
 - **2 anos de nascimento impossíveis**: `id_pessoa` 265 (2099) e 332 (1099)
 - **44 pacientes com 110-119 anos** — cauda longa do Synthea
@@ -73,7 +88,7 @@ ao cliente precisa ser o `pk`, não o ID original.
   `id_unidade_saude` 100% vazios
 - **Raça 75% branca** — inadequado para análise de equidade
 
-### 1.5 O problema de produto
+### 1.6 O problema de produto
 
 Uma tela de exames sem valores **parece defeito de software**. Um gráfico de
 medicamentos listando diagnósticos **parece bug**. Em ambos os casos o usuário
@@ -115,6 +130,7 @@ Esta ADR também é uma lista de exclusão. Não entram no backlog:
 - Dashboard de sinais vitais
 - Cálculo de IMC, controle pressórico ou classificação de HbA1c
 - Alerta de valor laboratorial crítico
+- Verificação de plausibilidade de prescrição por idade ou contraindicação
 - Mapa de pacientes ou filtro por unidade/médico
 - Análise de equidade racial
 

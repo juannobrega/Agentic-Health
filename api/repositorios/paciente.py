@@ -306,3 +306,55 @@ async def listar_alergias(sessao: AsyncSession, id_pessoa: int) -> list:
         .order_by(modelos.Observacao.data.desc().nullslast())
     )
     return list((await sessao.scalars(consulta)).all())
+
+
+# --------------------------------------------------------------- resumo
+
+
+async def dados_para_resumo(sessao: AsyncSession, id_pessoa: int) -> dict:
+    """Coleta o que o resumo clínico precisa, numa só passagem."""
+    pessoa = await obter(sessao, id_pessoa)
+    if pessoa is None:
+        return {}
+
+    condicoes = await sessao.execute(
+        select(
+            modelos.Condicao.nome_condicao,
+            func.min(modelos.Condicao.data_inicio).label("primeira"),
+            func.count().label("ocorrencias"),
+        )
+        .where(modelos.Condicao.id_pessoa == id_pessoa)
+        .group_by(modelos.Condicao.nome_condicao)
+        .order_by(func.min(modelos.Condicao.data_inicio).desc().nullslast())
+    )
+
+    medicamentos = await sessao.execute(
+        select(
+            modelos.MedicamentoValido.nome_medicamento,
+            func.max(modelos.MedicamentoValido.data_inicio).label("ultima"),
+        )
+        .where(modelos.MedicamentoValido.id_pessoa == id_pessoa)
+        .group_by(modelos.MedicamentoValido.nome_medicamento)
+        .order_by(func.max(modelos.MedicamentoValido.data_inicio).desc().nullslast())
+    )
+
+    atendimentos = await sessao.execute(
+        select(
+            modelos.Atendimento.data_inicio,
+            modelos.Atendimento.atendimento_descricao,
+        )
+        .where(modelos.Atendimento.id_pessoa == id_pessoa)
+        .order_by(modelos.Atendimento.data_inicio.desc().nullslast())
+        .limit(5)
+    )
+
+    return {
+        "pessoa": pessoa,
+        "idade": await obter_idade(sessao, id_pessoa),
+        "janela": await obter_janela_observacao(sessao, id_pessoa),
+        "contadores": await contar_eventos(sessao, id_pessoa),
+        "condicoes": list(condicoes.all()),
+        "medicamentos": list(medicamentos.all()),
+        "alergias": await listar_alergias(sessao, id_pessoa),
+        "atendimentos": list(atendimentos.all()),
+    }

@@ -3,6 +3,7 @@ from datetime import date
 from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, HTTPException, Path, Query
+from fastapi.responses import PlainTextResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from api.db import obter_sessao
@@ -21,6 +22,7 @@ from api.esquemas.paciente import (
     PacienteResumo,
 )
 from api.repositorios import paciente as repo
+from api.servicos import resumo_clinico
 
 roteador = APIRouter(prefix="/pacientes", tags=["pacientes"])
 
@@ -272,6 +274,30 @@ async def listar_exames(
         pagina=pagina,
         por_pagina=por_pagina,
     )
+
+
+@roteador.get(
+    "/{id_pessoa}/resumo",
+    response_class=PlainTextResponse,
+    summary="Resumo clínico em texto",
+    description=(
+        "Resumo do prontuário em português, gerado por **template "
+        "determinístico** — a mesma entrada produz sempre a mesma saída, sem "
+        "inferência de modelo.\n\n"
+        "O texto declara explicitamente que os exames não têm resultados "
+        "disponíveis: omitir isso levaria quem lê a concluir ausência de "
+        "alteração (ADR-008)."
+    ),
+    responses={200: {"content": {"text/plain": {}}}},
+)
+async def obter_resumo(
+    id_pessoa: IdPessoa,
+    sessao: Annotated[AsyncSession, Depends(obter_sessao)],
+) -> PlainTextResponse:
+    dados = await repo.dados_para_resumo(sessao, id_pessoa)
+    if not dados:
+        raise HTTPException(404, f"Paciente {id_pessoa} não encontrado")
+    return PlainTextResponse(resumo_clinico.montar(dados))
 
 
 @roteador.get(

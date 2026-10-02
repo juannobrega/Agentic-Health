@@ -95,7 +95,19 @@ diferentes. Nenhum par de linhas duplicadas é idêntico: são registros reais.
 Consequência prática: **não use essas colunas como chave** em join, deduplicação ou
 índice único. A carga em `Data/DB` resolve isso com uma chave substituta.
 
-### 4. Outros pontos de atenção
+### 4. Prescrições clinicamente implausíveis
+
+O Synthea atribui medicamentos sem validar plausibilidade contra a idade.
+**117 pacientes menores de 18 anos** têm prescrição de fármaco tipicamente
+adulto (metformina, tansulosina, atorvastatina, varfarina).
+
+Exemplo: o paciente `7`, nascido em 2013, tem **metformina registrada aos 2
+anos**, junto com tansulosina e atorvastatina.
+
+Não use este dataset para validar regras de prescrição, alertas de
+contraindicação por idade ou lógica de segurança medicamentosa.
+
+### 5. Outros pontos de atenção
 
 - **2 anos de nascimento impossíveis**: `id_pessoa` 265 (2099) e 332 (1099). Filtre.
 - **44 pacientes com 110-119 anos** — cauda longa conhecida do Synthea.

@@ -77,6 +77,30 @@ para não repetir as mesmas ressalvas em toda consulta.
 | `vw_medicamento_valido` | Só os 21.619 medicamentos RxNorm reais (ver ressalva 2) |
 | `vw_atendimento_resumo` | Um atendimento por linha com contagens de condições, exames etc. |
 
+## Migrations
+
+O schema existe em **duas fontes** que precisam concordar (ADR-006):
+
+| Fonte | Papel |
+|---|---|
+| `sql/01_schema.sql` + `02_indices.sql` | Bootstrap do container, roda no initdb |
+| `api/migrations/` | Histórico versionado via Alembic |
+
+```bash
+cd api
+python3 -m alembic check          # os modelos ORM batem com o banco?
+python3 -m alembic current        # revisão aplicada
+python3 -m alembic upgrade head   # aplica pendentes
+```
+
+**Ao mudar o schema**, altere as duas fontes. O teste
+`api/tests/test_schema.py` cria um banco por cada caminho e compara colunas e
+índices — divergência falha o build. Hoje as duas produzem **162 colunas e 37
+índices idênticos**.
+
+As views ficam fora das migrations: vivem em `sql/03_views.sql` e são aplicadas
+pelo initdb. O autogenerate do Alembic as ignora.
+
 ## ⚠️ Ressalvas do dataset
 
 Limitações do **Synthea original**, não da carga. O `--verificar` checa todas.
