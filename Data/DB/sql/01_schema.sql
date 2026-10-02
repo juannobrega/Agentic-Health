@@ -1,6 +1,10 @@
 -- Schema OMOP CDM (nomes em português) para o dataset Synthea traduzido.
 -- Executado automaticamente pelo postgres na primeira subida do container.
 
+-- Busca por nome clínico precisa ignorar acento: "pre-diabetes" deve achar
+-- "Pré-diabetes". O banco usa locale C, então ILIKE não normaliza sozinho.
+CREATE EXTENSION IF NOT EXISTS unaccent;
+
 CREATE SCHEMA IF NOT EXISTS synthea;
 SET search_path TO synthea, public;
 

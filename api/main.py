@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from api.config import obter_configuracao
 from api.db import encerrar_engine, obter_engine
-from api.routers import atendimentos, pacientes, saude
+from api.routers import atendimentos, dicionario, estatisticas, pacientes, saude
 
 cfg = obter_configuracao()
 
@@ -46,6 +46,8 @@ app.add_middleware(
 app.include_router(saude.roteador)
 app.include_router(pacientes.roteador)
 app.include_router(atendimentos.roteador)
+app.include_router(estatisticas.roteador)
+app.include_router(dicionario.roteador)
 
 
 @app.get("/", include_in_schema=False)

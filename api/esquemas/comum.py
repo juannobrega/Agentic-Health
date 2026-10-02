@@ -17,7 +17,9 @@ class Pagina(BaseModel, Generic[T]):
     itens: list[T]
     total: int = Field(description="Total de registros que atendem aos filtros")
     pagina: int = Field(ge=1)
-    por_pagina: int = Field(ge=1, le=100)
+    # o teto por endpoint é validado no parâmetro da rota; aqui só garantimos
+    # que a paginação é positiva
+    por_pagina: int = Field(ge=1)
 
     @property
     def total_paginas(self) -> int:

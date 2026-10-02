@@ -27,6 +27,8 @@ ESQUEMA = "synthea"
 
 
 def upgrade() -> None:
+    # busca por nome clínico ignorando acento (locale C não normaliza)
+    op.execute("CREATE EXTENSION IF NOT EXISTS unaccent")
     op.execute(f"CREATE SCHEMA IF NOT EXISTS {ESQUEMA}")
 
     op.create_table(
