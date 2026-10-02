@@ -112,6 +112,32 @@ def carregar(conn: psycopg.Connection, csv_nome: str, tabela: str) -> int:
     return n
 
 
+def marcar_revisao_alembic() -> None:
+    """Marca o banco com a revisão atual do Alembic.
+
+    O schema é criado pelo SQL de bootstrap no initdb, não pelas migrations, de
+    modo que a tabela de versão fica vazia num banco novo. Sem o stamp, o
+    `alembic check` falha reclamando que o banco está desatualizado — mesmo com
+    o schema correto (ADR-006).
+    """
+    import subprocess
+
+    api = _RAIZ_PROJETO / "api"
+    if not (api / "alembic.ini").exists():
+        return
+    resultado = subprocess.run(
+        [sys.executable, "-m", "alembic", "stamp", "head"],
+        cwd=api,
+        capture_output=True,
+        text=True,
+    )
+    if resultado.returncode == 0:
+        print("Revisão do Alembic marcada (stamp head).")
+    else:
+        print(f"Aviso: não foi possível marcar a revisão do Alembic: "
+              f"{resultado.stderr.strip()[:200]}")
+
+
 def verificar(conn: psycopg.Connection) -> bool:
     """Confere contagens, integridade referencial e as ressalvas conhecidas."""
     esperado = {
@@ -217,8 +243,10 @@ def main() -> int:
         print(f"\n{total} linhas em {time.perf_counter() - inicio:.1f}s")
 
         with conn.cursor() as cur:
-            cur.execute(f"ANALYZE")
+            cur.execute("ANALYZE")
         conn.commit()
+
+        marcar_revisao_alembic()
 
         return 0 if verificar(conn) else 1
 

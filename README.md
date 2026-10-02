@@ -2,8 +2,8 @@
 
 Plataforma de exploração clínica sobre dados sintéticos no padrão OMOP CDM.
 
-**Estado atual:** banco populado e validado. Backend e frontend especificados em
-[docs/](docs/), ainda não implementados.
+**Estado atual:** stack completo funcionando — Postgres, API FastAPI com 24
+endpoints e frontend React com 8 telas. 109 testes passando.
 
 ---
 
@@ -11,10 +11,22 @@ Plataforma de exploração clínica sobre dados sintéticos no padrão OMOP CDM.
 
 ```bash
 cp .env.example .env
-pip install -r Data/DB/requirements.txt
-
-docker compose up -d                        # sobe o Postgres
+docker compose up -d                        # Postgres + API + frontend
 python3 Data/DB/scripts/popular_banco.py    # carrega 312.276 linhas em ~20s
+```
+
+| Serviço | URL |
+|---|---|
+| Frontend | http://localhost:8081 |
+| API | http://localhost:8000 · [/docs](http://localhost:8000/docs) |
+| Postgres | localhost:5432 |
+
+Para desenvolver com hot-reload:
+
+```bash
+pip install -r api/requirements-dev.txt
+python3 -m uvicorn api.main:app --reload    # API em :8000
+cd web && npm install && npm run dev        # frontend em :5173
 ```
 
 Conexão: `localhost:5432` · banco `agentic_health` · usuário/senha `postgres`
@@ -33,7 +45,19 @@ SELECT nome_condicao, count(*) FROM condicao GROUP BY 1 ORDER BY 2 DESC LIMIT 10
 ```
 .
 ├── .env                      configuração ÚNICA (ADR-003)
-├── docker-compose.yml        Postgres (API e frontend a adicionar)
+├── docker-compose.yml        Postgres + API + frontend
+├── api/                      FastAPI + SQLAlchemy
+│   ├── modelos/              ORM (forma do banco)
+│   ├── esquemas/             Pydantic (forma da API)
+│   ├── repositorios/         acesso a dados
+│   ├── routers/              rotas por domínio
+│   ├── servicos/             resumo clínico
+│   ├── migrations/           Alembic
+│   └── tests/                109 testes
+├── web/                      React + Vite + TypeScript
+│   ├── src/api/              cliente e tipos (tipos.ts é gerado)
+│   ├── src/paginas/          8 telas
+│   └── src/componentes/
 ├── Data/
 │   ├── Synthea/              dataset traduzido — 10 CSVs + dicionário
 │   └── DB/                   schema SQL, índices, views e script de carga
@@ -87,14 +111,24 @@ para análise de equidade.
 | [Data/Synthea/README.md](Data/Synthea/README.md) | O dataset e suas ressalvas |
 | [Data/DB/README.md](Data/DB/README.md) | Schema, views e carga |
 
+## Testes
+
+```bash
+pip install -r api/requirements-dev.txt
+python3 -m pytest api/tests/ -q      # 109 testes
+cd web && npm run build              # tsc + vite
+```
+
+Os testes rodam contra o banco real e cobrem as garantias estruturais: chave
+substituta como primary key, ausência de N+1, comparação entre as duas fontes de
+schema, e as premissas do dataset (exames sem valor, 7.899 medicamentos
+excluídos, 1.128 pacientes válidos).
+
 ## Próximos passos
 
-1. **E5** — plataforma: API e frontend no compose, modelos ORM, migrations,
-   tipos gerados e testes de schema
-2. **E1** — prontuário e timeline (a base do produto)
-3. **E2, E4, E3** — atendimentos, dicionário, coortes
-
-A camada de agente de IA será especificada quando o tema for abordado.
+Os 5 épicos planejados estão implementados. A camada de agente de IA será
+especificada quando o tema for abordado — ver "Temas ainda sem ADR" no
+[índice das ADRs](docs/adr/README.md).
 
 ## Segurança
 
