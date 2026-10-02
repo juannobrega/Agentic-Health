@@ -9,6 +9,15 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from sqlalchemy.pool import NullPool
 
 from api.config import obter_configuracao
+from api.db import descartar_engine_sem_fechar
+
+
+@pytest_asyncio.fixture(autouse=True)
+async def _engine_isolado():
+    """Garante que cada teste comece e termine sem engine global cacheado."""
+    descartar_engine_sem_fechar()
+    yield
+    descartar_engine_sem_fechar()
 
 
 @pytest_asyncio.fixture

@@ -49,3 +49,16 @@ async def encerrar_engine() -> None:
         await _engine.dispose()
     _engine = None
     _criar_sessao = None
+
+
+def descartar_engine_sem_fechar() -> None:
+    """Esquece o engine sem await — para testes.
+
+    O engine fica atrelado ao event loop que o criou. O pytest-asyncio abre um
+    loop por teste, então um engine reaproveitado produz "attached to a
+    different loop". Em produção isto não é usado: o lifespan cria o engine uma
+    vez e o encerra com `encerrar_engine`.
+    """
+    global _engine, _criar_sessao
+    _engine = None
+    _criar_sessao = None
